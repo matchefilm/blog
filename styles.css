@@ -90,3 +90,30 @@ body, html {
         display: flex;
     }
 }
+.card {
+    display: none; /* 默认隐藏卡片 */
+    position: fixed; /* 固定位置 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000; /* 确保卡片在其他内容之上 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+ 
+.card p {
+    margin: 0;
+    padding: 10px 0;
+}
+ 
+.card a {
+    color: #61dafb;
+    text-decoration: none;
+}
+ 
+.card a:hover {
+    text-decoration: underline;
+}

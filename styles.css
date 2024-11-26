@@ -117,3 +117,30 @@ body, html {
 .card a:hover {
     text-decoration: underline;
 }
+
+.container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    transform: none;
+    margin-bottom: 20px; /* 为卡片之间添加间隔 */
+}
+
+.nav-links a {
+    font-size: 1em; /* 根据需要调整 */
+    padding: 10px; /* 为链接添加一些内边距 */
+}
+
+@media (max-width: 768px) {
+    /* 你现有的媒体查询代码 */
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 0.9em; /* 进一步减小字体大小 */
+    }
+}

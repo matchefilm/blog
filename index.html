@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Navigation Page</title>
+    <title>科技感导航页</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">TechNav</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="burger" onclick="toggleMenu()">
-            ☰
-        </button>
-    </nav>
-
-    <div class="content">
-        <section id="home">Home Section</section>
-        <section id="services">Services Section</section>
-        <section id="about">About Section</section>
-        <section id="contact">Contact Section</section>
-    </div>
-
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- 汉堡菜单图标 -->
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>欢迎来到科技导航页</h1>
+            <p>这里是科技感十足的导航示例。</p>
+        </section>
+        <section id="about">
+            <h2>关于我们</h2>
+            <p>我们致力于提供最前沿的科技解决方案。</p>
+        </section>
+        <section id="services">
+            <h2>服务</h2>
+            <p>我们的服务包括软件开发、数据分析等。</p>
+        </section>
+        <section id="contact">
+            <h2>联系我们</h2>
+            <p>如需了解更多信息，请联系我们。</p>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

@@ -117,3 +117,61 @@ body, html {
 .card a:hover {
     text-decoration: underline;
 }
+/* 增加小屏幕的字体大小调整 */
+body, html {
+    font-size: 14px; /* 默认字体大小 */
+}
+
+/* 优化卡片在小屏幕上的显示 */
+.card {
+    width: 90%; /* 卡片宽度调整为屏幕宽度的90% */
+    left: 5%; /* 卡片水平居中 */
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px; /* 调整圆角大小 */
+}
+
+/* 媒体查询，针对小屏幕进行优化 */
+@media (max-width: 768px) {
+    /* 原有的媒体查询代码 */
+
+    /* 优化汉堡菜单的样式 */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* 优化导航链接的样式 */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* 导航背景颜色 */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 10px; /* 增加链接的内边距 */
+        border-bottom: 1px solid #61dafb; /* 增加底部边框 */
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none; /* 最后一个链接没有底部边框 */
+    }
+
+    /* 当导航激活时显示导航链接 */
+    .navbar.active .nav-links {
+        display: flex;
+    }
+
+    /* 优化卡片在小屏幕上的显示 */
+    .card {
+        width: 90%; /* 卡片宽度调整为屏幕宽度的90% */
+        left: 5%; /* 卡片水平居中 */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

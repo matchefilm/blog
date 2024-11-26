@@ -1,54 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科技柴导航页</title>
+    <title>Tech Navigation Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>极简服务</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#" class="nav-card-link" data-card-id="home">首页</a></li>
-                <li><a href="#" class="nav-card-link" data-card-id="about-card">关于</a></li>
-                <li><a href="#" class="nav-card-link" data-card-id="services-card">服务</a></li>
-                <li><a href="#" class="nav-card-link" data-card-id="contact-card">联系</a></li>
-            </ul>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+    <nav class="navbar">
+        <div class="logo">TechNav</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="burger" onclick="toggleMenu()">
+            ☰
+        </button>
+    </nav>
 
-        <!-- 首页卡片 -->
-        <div class="card" id="home">
-            <p>首页入口</p>
-            <p><a href="https://matchefilm.github.io/blog/" target="_blank">默认入口</a></p>
-            <p><a href="https://kejichai.us.kg/" target="_blank">常用入口</a></p>
-            <p><a href="https://blog-30r.pages.dev/" target="_blank">备用入口</a></p>
-        </div>
-        
-        <!-- 关于卡片 -->
-        <div class="card" id="about-card">
-            <p>这是matchefilm的简单导航页</p>
-        </div>
-        
-        <!-- 服务卡片 -->
-        <div class="card" id="services-card">
-            <p><a href="https://matchefilm.top" target="_blank">matchefilm公益二级域名</a></p>
-            <p>免费计划任务托管(测试阶段-请联系matchefilm使用)</p>
-        </div>
-        
-        <!-- 联系卡片 -->
-        <div class="card" id="contact-card">
-            <p><a href="https://space.bilibili.com/1693452988" target="_blank">bilibili：MatcheFilm</a></p>
-            <p><a href="http://wpa.qq.com/msgrd?v=3&uin=1570915261&site=qq&menu=yes" target="_blank">QQ：3469545233</a></p>
-        </div>
+    <div class="content">
+        <section id="home">Home Section</section>
+        <section id="services">Services Section</section>
+        <section id="about">About Section</section>
+        <section id="contact">Contact Section</section>
     </div>
 
     <script src="script.js"></script>

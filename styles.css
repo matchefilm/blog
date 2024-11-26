@@ -1,89 +1,76 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
-/* Navbar styles */
-.navbar {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
+    background-color: #333;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    padding: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #4CAF50;
-}
-
-.burger {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff;
+.menu-icon {
+    font-size: 30px;
     cursor: pointer;
 }
 
-/* Content styles */
-.content section {
-    padding: 2rem;
-    border-bottom: 1px solid #ccc;
+.navbar {
+    display: none; /* 初始隐藏 */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        right: 0;
-        top: 60px;
-        background: #333;
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex; /* 在大屏幕上显示 */
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .navbar ul {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
     }
-
-    .nav-links li {
-        text-align: center;
-        padding: 10px 0;
+    .navbar li {
+        padding: 0 20px;
     }
-
-    .burger {
-        display: block;
-    }
-}
-
-/* Animation for nav-links */
-.nav-active {
-    transform: translateX(0);
 }
